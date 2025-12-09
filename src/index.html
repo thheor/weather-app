@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="font-sans flex justify-center items-center text-darkblue bg-darkblue">
+  <div class="p-10 bg-lightblue max-w-100 md:w-80 sm:w-60 h-120 mt-20 rounded-2xl">
+    <!-- Location -->
+    <div id="search-box" class="m-auto justify-between w-80">
+      <i class="fa-solid fa-location-dot scale-200"></i>
+      <input type="text" placeholder="Enter your location" class="text-xl w-65 border-none focus:outline-0 ml-2">
+      <button class="fa-solid fa-magnifying-glass scale-180 float-right hover:cursor-pointer relative top-2"></button>
+    </div>
+
+    <div id="wallpaper" class="m-auto scale-125 mt-8">
+      <img src="img/sleep.png" alt="">
+    </div>
+
+    <div id="loading"></div>
+
+    <div id="weather-box" class="">
+      <img src="" id="img-weather" class="max-w-50 m-auto bg-amber-900auto">
+      <p id="temperature" class="text-center text-800 text-xl mt-2"></p>
+      <p id="description" class="text-center text-xl"></p>
+    </div>
+
+    <div id="weather-details" class="hidden justify-between mt-10">
+      <div id="humidity">
+        <i class="fa-solid fa-water scale-125"></i>
+        <div id="text">
+          <span id="humidity-level"></span>
+          <p class="">Humidity</p>
+        </div>
+      </div>
+      <div id="wind">
+        <i class="fa-solid fa-wind scale-125"></i>
+        <div id="text">
+          <span id="wind-speed"></span>
+          <p>Wind Speed</p>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
