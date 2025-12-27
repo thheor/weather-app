@@ -10,6 +10,13 @@ const inputLocation = document.querySelector('input'),
       windSpeed = document.querySelector('#wind-speed'),
       wallpaper = document.querySelector('#wallpaper');
 
+inputLocation.addEventListener('keydown', function(e) {
+    if(e.key === 'Enter'){
+        e.preventDefault();
+        searchBtn.click();
+    }
+})
+
 searchBtn.addEventListener('click', () => {
     const location = inputLocation.value;
     if(location){
